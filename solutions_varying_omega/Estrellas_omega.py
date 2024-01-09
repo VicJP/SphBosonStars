@@ -18,20 +18,21 @@ import numpy.polynomial.chebyshev as pch
 import os
 
 N=18
-gg = -5.0          #THIS IS g
-hh = -20.0          #THIS IS h 
+gg = -10.0          #THIS IS g
+hh = 10.0          #THIS IS h 
 
 
 #Ns=np.linspace(9.529482481577983277e-01,0.99,40)
-Ns=np.linspace(0.995,0.0,200)
+#Ns=np.linspace(0.995,0.0,200)
+Ns=np.linspace(0.998,0.0,400)
 
 
 #Colocar N0!=N si queremos construir un dato inicial a partir de otro con N menor
 N0=N
 # HERE SUBSTITUTE " " with an specific file, to construct family of solutions starting from it
 #datafile_N0=" "
-datafile_N0="start_point/omega_9.90e-01.dat"
-
+#datafile_N0="start_point/omega_9.90e-01.dat"
+datafile_N0="start_point/omega_9.95e-01.dat"
 
 
 

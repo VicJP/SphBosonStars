@@ -17,11 +17,11 @@ import numpy.polynomial.chebyshev as pch
 
 import os
 
-N=18
-gg = -10.0          #THIS IS g
-hh = -20.0          #THIS IS h 
+N=24
+gg = 0.0          #THIS IS g
+hh = 0.0          #THIS IS h 
 
-#Ns=np.linspace(0.91,0.4,40) # g=0 h=0, g=-1 h=0,
+Ns=np.linspace(0.91,0.4,40) # g=0 h=0, g=-1 h=0,
 #Ns=np.linspace(0.91,0.7,40) #  g=-5 h=0
 #Ns=np.linspace(0.91,0.85,40) #  g=-10 h=0
 #Ns=np.linspace(0.91,0.95,40) #  g=-20 h=0
@@ -29,18 +29,20 @@ hh = -20.0          #THIS IS h
 #Ns=np.linspace(0.91,0.1,60) # with h=10, and g=-0,-1,-5 and -7.5
                             # also h=20, and g=0,-1,-5 and -7.5, -20
                             # also h=-5, and g=0,-1
-Ns=np.linspace(0.91,0.1,80) # with h=-20, and g=-5 and 
-Ns=np.linspace(0.91,0.162,60) # with h=-20, and g=-10 and 
+#Ns=np.linspace(0.91,0.1,80) # with h=-20, and g=-5 and 
+#Ns=np.linspace(0.91,0.162,60) # with h=-20, and g=-10 and
 
+Ns=np.linspace(0.99,0.06,100) # g=0 h=0, g=-1 h=0,
 
 
 
 #Colocar N0!=N si queremos construir un dato inicial a partir de otro con N menor
-N0=N
+N0=18
 # HERE SUBSTITUTE " " with an specific file, to construct family of solutions starting from it
 #datafile_N0=" "
-datafile_N0="g0.00_h0.00/lapse_9.10e-01.dat"
-
+#datafile_N0="g0.00_h0.00/lapse_9.10e-01.dat"
+datafile_N0="solutions_varying_omega/start_point/omega_9.95e-01.dat"
+#datafile_N0="g0.00_h0.00_TEMP/lapse_1.01e-01.dat"
 
 
 
@@ -679,8 +681,8 @@ for i in np.arange(len(Ns)):
     #print(" ")
     #if i!=0 and MADM_a[i-1]>MADM_a[i]:
     #    break
-    if i!=0 and omega_a[i-1]<omega_a[i]:
-        break
+    #if i!=0 and omega_a[i-1]<omega_a[i]:
+    #    break
 
 uc_a_i=uc_a[0:i+1]
 omega_a_i=omega_a[0:i+1]

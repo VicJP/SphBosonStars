@@ -22,7 +22,7 @@ sigmax=520
 
 phi0=2.23e-18
 
-datafile="solutions_varying_omega/g-5.00_h-20.00/omega_8.35e-01.dat"
+datafile="solutions_varying_omega/g-10.00_h0.00/omega_0.00e+00.dat"
 
 
 
