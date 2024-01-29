@@ -22,7 +22,7 @@ sigmax=520
 
 phi0=2.23e-18
 
-datafile="solutions_varying_omega/g-10.00_h0.00/omega_0.00e+00.dat"
+datafile="g-10.00_h20.00/lapse_5.53e-01.dat"
 
 
 
@@ -114,7 +114,7 @@ if imprimir=="phi":
     plt.plot(2.*r_m3/(1.0-xx+epsilon),campo4, color="k", linestyle=":")
 
     
-    plt.xlim(0,10)
+    plt.xlim(0,20)
     #plt.xlim(135,145.0)
     #plt.ylim(0,0.002)
     #plt.yscale("log")
